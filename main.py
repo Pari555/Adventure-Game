@@ -11,6 +11,7 @@ pixieDustLevel = 100
 hungerLevel = 0
 waterBottlesLeft = 3
 burgersLeft = 3
+pixieDustBags = 3
 
 print("These are your options:")
 print("A = Stop to Rest")
@@ -28,13 +29,21 @@ while(True):
     milesTraveled += distanceTraveled
     print("You Swam " + distanceTraveled)
 
-    totalSharkMiles = random.randint(1,6)
-    wolvesDistance += totalSharkMiles
+    totalWolvesMiles = random.randint(1,6)
+    wolvesDistance += totalWolvesMiles
 
     pixieDustLevel -= 10
+    
   elif(userInput == "B"):
-    if()
-
+    if(pixieDustBags > 0):
+      pixieDustLevel = 100
+      pixieDustBags -= 1
+      print("Great,you Pixie Dust bag has switched!")
+    else:
+      print("Sorry you are out of Pixie Dust!")
+      
+      totalWolvesMiles = random.randint(1,6)
+      wolvesDistance += totalWolvesMiles
 
   elif(userInput == "C"):
     print("You chose C!")
