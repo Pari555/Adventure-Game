@@ -11,7 +11,7 @@ pixieDustLevel = 100
 hungerLevel = 0
 waterBottlesLeft = 3
 burgersLeft = 3
-pixieDustBags = 3
+pixieDustBags = 5
 
 print("These are your options:")
 print("A = Stop to Rest")
@@ -33,7 +33,7 @@ while(True):
     wolvesDistance += totalWolvesMiles
 
     pixieDustLevel -= 10
-    
+
   elif(userInput == "B"):
     if(pixieDustBags > 0):
       pixieDustLevel = 100
@@ -68,7 +68,7 @@ while(True):
   if(milesTraveled - wolvesDistance <= 5):
     print("The wolves are getting dangerously close to you!")
 
-  #Printing the options again and asking the user fro another choice
+  #Printing the options again and asking the user from another choice
   print("These are your options:")
   print("A = Stop to Rest")
   print("B = Status Check")
